@@ -18,7 +18,7 @@
       "host": ["139.199.66.154"],
       "ref": "origin/master",
       "repo": "git@github.com:biliydog/wechat.git",
-      "path": "/var/www/wechat",
+      "path": "/www/wechat",
       "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy-local": "echo 'Deploy Done!'",
       "env": {
