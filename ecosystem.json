@@ -22,7 +22,6 @@
       "path": "/home/ubuntu/www/wechat",
       "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy-local": "echo 'Deploy Done!'",
-      "post-deploy" : "echo 'Deploy Done2!'",
       "env": {
         "NODE_ENV": "production"
       }
