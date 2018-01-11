@@ -1,0 +1,29 @@
+{
+  "apps": [
+    {
+      "name": "wechat",
+      "script": "./server.js",
+      "watch": true,
+      "env": {
+        "COMMON_VARIABLE": true
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "ubuntu",
+      "host": ["139.199.66.154"],
+      "ref": "origin/master",
+      "repo": "git@github.com:biliydog/wechat.git",
+      "path": "/var/www/wechat",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "pre-deploy-local": "echo 'Deploy Done!'",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
