@@ -22,6 +22,7 @@
       "path": "/home/ubuntu/www/wechat",
       "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy-local": "echo 'Deploy Done!'",
+      "post-deploy": "export NODE_ENV=production && pm2 startOrRestart ecosystem.json --env production",
       "env": {
         "NODE_ENV": "production"
       }
