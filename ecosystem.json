@@ -21,7 +21,8 @@
       "repo": "git@github.com:biliydog/wechat.git",
       "path": "/home/ubuntu/www/wechat",
       "ssh_options": "StrictHostKeyChecking=no",
-      "pre-deploy-local": "echo 'Deploy Done!'"    
+      "pre-deploy-local": "echo 'Deploy Done!'",
+      "post-deploy": "export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v8.9.4/bin/ && npm rebuild && pm2 startOrRestart ecosystem.json --env dev"
     }
   }
 }
